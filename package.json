@@ -1,0 +1,23 @@
+{
+  "name": "nodetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",//对所有文件进行校验，及补缺
+    "lint:create": "eslint --init"  //创建。eslintrc.js
+  },
+  "pre-commit": [
+    "lint" //在git commit 时运行npm run lint 进行校验，若有错误不能提交
+  ],
+  "author": "shuah",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "pre-commit": "^1.2.2"  //npm i pre-commit
+  },
+  "dependencies": {
+    "chalk": "^2.4.2"
+  }
+}
+
