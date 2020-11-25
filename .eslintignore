@@ -1,0 +1,6 @@
+//不用校验的文件
+node_modules
+dist/
+test
+build/
+ 
